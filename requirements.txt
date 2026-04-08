@@ -1,0 +1,5 @@
+﻿numpy
+pandas
+matplotlib
+pyyaml
+pillow

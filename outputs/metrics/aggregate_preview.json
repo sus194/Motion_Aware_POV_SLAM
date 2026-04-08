@@ -1,0 +1,782 @@
+[
+  {
+    "method": "pov_baseline",
+    "ate": 1.6641503595879945,
+    "rpe": 0.19915815259005978,
+    "avg_runtime_per_frame": 0.00022695111110806454,
+    "total_runtime": 0.06127679999917743,
+    "landmark_position_error": 3.134639818364782,
+    "map_consistency_score": 0.3865562687893274,
+    "false_landmark_updates": 30.0,
+    "matched_landmarks": 30.0,
+    "state_classification_accuracy": 0.3448275862068966,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 9,
+        "SEMI_STATIC": 9,
+        "DYNAMIC": 0
+      },
+      "SEMI_STATIC": {
+        "STATIC": 10,
+        "SEMI_STATIC": 1,
+        "DYNAMIC": 0
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.1,
+    "change_recall": 0.09090909090909091,
+    "seed": 3,
+    "run_label": "baseline",
+    "dynamic_track_position_error": NaN,
+    "track_survival_length": NaN,
+    "id_switch_count": NaN,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_filter_only",
+    "ate": 1.4346507013735255,
+    "rpe": 0.22398476207103044,
+    "avg_runtime_per_frame": 0.0008948862957940609,
+    "total_runtime": 0.24161929986439645,
+    "landmark_position_error": 2.036223654184853,
+    "map_consistency_score": 0.5927552691630295,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 36.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 12,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "SEMI_STATIC": {
+        "STATIC": 6,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 5
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.45454545454545453,
+    "change_recall": 0.45454545454545453,
+    "seed": 3,
+    "run_label": "dynamic_filter_only",
+    "dynamic_track_position_error": 0.14202842852477393,
+    "track_survival_length": 10.25,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_tracking_only",
+    "ate": 1.4346507013735255,
+    "rpe": 0.22398476207103044,
+    "avg_runtime_per_frame": 0.0008042385189414578,
+    "total_runtime": 0.21714440011419361,
+    "landmark_position_error": 2.036223654184853,
+    "map_consistency_score": 0.5927552691630295,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 36.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 12,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "SEMI_STATIC": {
+        "STATIC": 6,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 5
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.45454545454545453,
+    "change_recall": 0.45454545454545453,
+    "seed": 3,
+    "run_label": "kalman_tracking_only",
+    "dynamic_track_position_error": 0.14202842852477393,
+    "track_survival_length": 10.25,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_full",
+    "ate": 1.299260796263347,
+    "rpe": 0.22159503582861917,
+    "avg_runtime_per_frame": 0.0008470914809516183,
+    "total_runtime": 0.22871469985693693,
+    "landmark_position_error": 2.027114795289013,
+    "map_consistency_score": 0.5945770409421974,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 44.0,
+    "state_classification_accuracy": 0.3103448275862069,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 4,
+        "SEMI_STATIC": 8,
+        "DYNAMIC": 6
+      },
+      "SEMI_STATIC": {
+        "STATIC": 1,
+        "SEMI_STATIC": 5,
+        "DYNAMIC": 5
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.4166666666666667,
+    "change_recall": 0.9090909090909091,
+    "seed": 3,
+    "run_label": "full_motion_aware",
+    "dynamic_track_position_error": 0.14167426179737438,
+    "track_survival_length": 10.25,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "pov_baseline",
+    "ate": 2.035199939993297,
+    "rpe": 0.3137512078323347,
+    "avg_runtime_per_frame": 0.0003073325923954447,
+    "total_runtime": 0.08297979994677007,
+    "landmark_position_error": 3.1687254665096147,
+    "map_consistency_score": 0.44330852368487134,
+    "false_landmark_updates": 23.0,
+    "matched_landmarks": 38.0,
+    "state_classification_accuracy": 0.5517241379310345,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 8,
+        "SEMI_STATIC": 10,
+        "DYNAMIC": 0
+      },
+      "SEMI_STATIC": {
+        "STATIC": 3,
+        "SEMI_STATIC": 8,
+        "DYNAMIC": 0
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.4444444444444444,
+    "change_recall": 0.7272727272727273,
+    "seed": 7,
+    "run_label": "baseline",
+    "dynamic_track_position_error": NaN,
+    "track_survival_length": NaN,
+    "id_switch_count": NaN,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_filter_only",
+    "ate": 2.0532820219994696,
+    "rpe": 0.32322536363352394,
+    "avg_runtime_per_frame": 0.0008806370371193799,
+    "total_runtime": 0.2377720000222326,
+    "landmark_position_error": 3.2611205405069685,
+    "map_consistency_score": 0.4289643781382869,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 60.0,
+    "state_classification_accuracy": 0.4482758620689655,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 13,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 5
+      },
+      "SEMI_STATIC": {
+        "STATIC": 5,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.5454545454545454,
+    "change_recall": 0.5454545454545454,
+    "seed": 7,
+    "run_label": "dynamic_filter_only",
+    "dynamic_track_position_error": 0.15821482656017188,
+    "track_survival_length": 11.6,
+    "id_switch_count": 29.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_tracking_only",
+    "ate": 2.0532820219994696,
+    "rpe": 0.32322536363352394,
+    "avg_runtime_per_frame": 0.0008366985186175615,
+    "total_runtime": 0.22590860002674162,
+    "landmark_position_error": 3.2611205405069685,
+    "map_consistency_score": 0.4289643781382869,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 60.0,
+    "state_classification_accuracy": 0.4482758620689655,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 13,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 5
+      },
+      "SEMI_STATIC": {
+        "STATIC": 5,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.5454545454545454,
+    "change_recall": 0.5454545454545454,
+    "seed": 7,
+    "run_label": "kalman_tracking_only",
+    "dynamic_track_position_error": 0.15821482656017188,
+    "track_survival_length": 11.6,
+    "id_switch_count": 29.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_full",
+    "ate": 2.1408307034953684,
+    "rpe": 0.32389883893522087,
+    "avg_runtime_per_frame": 0.0008684333336229123,
+    "total_runtime": 0.23447700007818634,
+    "landmark_position_error": 3.1359913539841453,
+    "map_consistency_score": 0.4423804166541117,
+    "false_landmark_updates": 2.0,
+    "matched_landmarks": 69.0,
+    "state_classification_accuracy": 0.13793103448275862,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 13,
+        "DYNAMIC": 5
+      },
+      "SEMI_STATIC": {
+        "STATIC": 1,
+        "SEMI_STATIC": 4,
+        "DYNAMIC": 6
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.35714285714285715,
+    "change_recall": 0.9090909090909091,
+    "seed": 7,
+    "run_label": "full_motion_aware",
+    "dynamic_track_position_error": 0.15879360750889818,
+    "track_survival_length": 11.6,
+    "id_switch_count": 27.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "pov_baseline",
+    "ate": 2.0517689030965736,
+    "rpe": 0.3691160454784105,
+    "avg_runtime_per_frame": 0.00025575296366932217,
+    "total_runtime": 0.06905330019071698,
+    "landmark_position_error": 3.4291947665529925,
+    "map_consistency_score": 0.37563550145318203,
+    "false_landmark_updates": 25.0,
+    "matched_landmarks": 50.0,
+    "state_classification_accuracy": 0.3793103448275862,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 4,
+        "SEMI_STATIC": 12,
+        "DYNAMIC": 0
+      },
+      "SEMI_STATIC": {
+        "STATIC": 6,
+        "SEMI_STATIC": 7,
+        "DYNAMIC": 0
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.3684210526315789,
+    "change_recall": 0.5384615384615384,
+    "seed": 11,
+    "run_label": "baseline",
+    "dynamic_track_position_error": NaN,
+    "track_survival_length": NaN,
+    "id_switch_count": NaN,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_filter_only",
+    "ate": 1.9971554986928048,
+    "rpe": 0.38281581702931544,
+    "avg_runtime_per_frame": 0.0010764114817397462,
+    "total_runtime": 0.2906311000697315,
+    "landmark_position_error": 2.6598383634674003,
+    "map_consistency_score": 0.47709041873290214,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 59.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 12,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 4
+      },
+      "SEMI_STATIC": {
+        "STATIC": 6,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 7
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.6363636363636364,
+    "change_recall": 0.5384615384615384,
+    "seed": 11,
+    "run_label": "dynamic_filter_only",
+    "dynamic_track_position_error": 0.14510850264380729,
+    "track_survival_length": 7.0,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_tracking_only",
+    "ate": 1.9971554986928048,
+    "rpe": 0.38281581702931544,
+    "avg_runtime_per_frame": 0.0008712107401893097,
+    "total_runtime": 0.2352268998511136,
+    "landmark_position_error": 2.6598383634674003,
+    "map_consistency_score": 0.47709041873290214,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 59.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 12,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 4
+      },
+      "SEMI_STATIC": {
+        "STATIC": 6,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 7
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.6363636363636364,
+    "change_recall": 0.5384615384615384,
+    "seed": 11,
+    "run_label": "kalman_tracking_only",
+    "dynamic_track_position_error": 0.14510850264380729,
+    "track_survival_length": 7.0,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_full",
+    "ate": 2.007719340839813,
+    "rpe": 0.38014552978397437,
+    "avg_runtime_per_frame": 0.0008582496291233433,
+    "total_runtime": 0.2317273998633027,
+    "landmark_position_error": 2.6417658579790246,
+    "map_consistency_score": 0.4847923568314083,
+    "false_landmark_updates": 3.0,
+    "matched_landmarks": 60.0,
+    "state_classification_accuracy": 0.27586206896551724,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 2,
+        "SEMI_STATIC": 10,
+        "DYNAMIC": 4
+      },
+      "SEMI_STATIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 6,
+        "DYNAMIC": 7
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.48148148148148145,
+    "change_recall": 1.0,
+    "seed": 11,
+    "run_label": "full_motion_aware",
+    "dynamic_track_position_error": 0.1463002795775401,
+    "track_survival_length": 7.0,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "pov_baseline",
+    "ate": 2.1824790074015508,
+    "rpe": 0.29070296744854485,
+    "avg_runtime_per_frame": 0.00025388814888342666,
+    "total_runtime": 0.06854980019852519,
+    "landmark_position_error": 3.555468578720688,
+    "map_consistency_score": 0.36948769033898443,
+    "false_landmark_updates": 37.0,
+    "matched_landmarks": 50.0,
+    "state_classification_accuracy": 0.5172413793103449,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 7,
+        "SEMI_STATIC": 10,
+        "DYNAMIC": 0
+      },
+      "SEMI_STATIC": {
+        "STATIC": 4,
+        "SEMI_STATIC": 8,
+        "DYNAMIC": 0
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.4444444444444444,
+    "change_recall": 0.6666666666666666,
+    "seed": 19,
+    "run_label": "baseline",
+    "dynamic_track_position_error": NaN,
+    "track_survival_length": NaN,
+    "id_switch_count": NaN,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_filter_only",
+    "ate": 2.0377586712952627,
+    "rpe": 0.3044027067631001,
+    "avg_runtime_per_frame": 0.0009384555561054082,
+    "total_runtime": 0.2533830001484602,
+    "landmark_position_error": 2.5120486413922904,
+    "map_consistency_score": 0.5179149952399682,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 60.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 12,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 5
+      },
+      "SEMI_STATIC": {
+        "STATIC": 6,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.5454545454545454,
+    "change_recall": 0.5,
+    "seed": 19,
+    "run_label": "dynamic_filter_only",
+    "dynamic_track_position_error": 0.14649298318568016,
+    "track_survival_length": 6.5,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_tracking_only",
+    "ate": 2.0377586712952627,
+    "rpe": 0.3044027067631001,
+    "avg_runtime_per_frame": 0.0009759462964548557,
+    "total_runtime": 0.26350550004281104,
+    "landmark_position_error": 2.5120486413922904,
+    "map_consistency_score": 0.5179149952399682,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 60.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 12,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 5
+      },
+      "SEMI_STATIC": {
+        "STATIC": 6,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.5454545454545454,
+    "change_recall": 0.5,
+    "seed": 19,
+    "run_label": "kalman_tracking_only",
+    "dynamic_track_position_error": 0.14649298318568016,
+    "track_survival_length": 6.5,
+    "id_switch_count": 1.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_full",
+    "ate": 2.097079234588526,
+    "rpe": 0.3165656280638768,
+    "avg_runtime_per_frame": 0.0008163851849665796,
+    "total_runtime": 0.22042399994097647,
+    "landmark_position_error": 2.579496385174387,
+    "map_consistency_score": 0.5099237798999801,
+    "false_landmark_updates": 5.0,
+    "matched_landmarks": 60.0,
+    "state_classification_accuracy": 0.1724137931034483,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 12,
+        "DYNAMIC": 5
+      },
+      "SEMI_STATIC": {
+        "STATIC": 1,
+        "SEMI_STATIC": 5,
+        "DYNAMIC": 6
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.39285714285714285,
+    "change_recall": 0.9166666666666666,
+    "seed": 19,
+    "run_label": "full_motion_aware",
+    "dynamic_track_position_error": 0.14573884696734823,
+    "track_survival_length": 6.5,
+    "id_switch_count": 0.0,
+    "scenario": "semi_static_only",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "pov_baseline",
+    "ate": 2.9777791780864264,
+    "rpe": 0.3923000627335861,
+    "avg_runtime_per_frame": 0.00026181407393542703,
+    "total_runtime": 0.0706897999625653,
+    "landmark_position_error": 5.206474156479859,
+    "map_consistency_score": 0.2377141347754596,
+    "false_landmark_updates": 34.0,
+    "matched_landmarks": 58.0,
+    "state_classification_accuracy": 0.4482758620689655,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 7,
+        "SEMI_STATIC": 8,
+        "DYNAMIC": 0
+      },
+      "SEMI_STATIC": {
+        "STATIC": 3,
+        "SEMI_STATIC": 6,
+        "DYNAMIC": 0
+      },
+      "DYNAMIC": {
+        "STATIC": 2,
+        "SEMI_STATIC": 3,
+        "DYNAMIC": 0
+      }
+    },
+    "change_precision": 0.5294117647058824,
+    "change_recall": 0.6428571428571429,
+    "seed": 3,
+    "run_label": "baseline",
+    "dynamic_track_position_error": NaN,
+    "track_survival_length": NaN,
+    "id_switch_count": NaN,
+    "scenario": "mixed",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_filter_only",
+    "ate": 2.9242012228095517,
+    "rpe": 0.4179121114165777,
+    "avg_runtime_per_frame": 0.0008522399994372218,
+    "total_runtime": 0.23010479984804988,
+    "landmark_position_error": 4.520388056244092,
+    "map_consistency_score": 0.2700158513730105,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 66.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 9,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "SEMI_STATIC": {
+        "STATIC": 7,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 2
+      },
+      "DYNAMIC": {
+        "STATIC": 2,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 3
+      }
+    },
+    "change_precision": 0.45454545454545453,
+    "change_recall": 0.35714285714285715,
+    "seed": 3,
+    "run_label": "dynamic_filter_only",
+    "dynamic_track_position_error": 0.1294152267403172,
+    "track_survival_length": 13.0,
+    "id_switch_count": 5.0,
+    "scenario": "mixed",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_tracking_only",
+    "ate": 2.9242012228095517,
+    "rpe": 0.4179121114165777,
+    "avg_runtime_per_frame": 0.0010306181480970091,
+    "total_runtime": 0.2782668999861925,
+    "landmark_position_error": 4.520388056244092,
+    "map_consistency_score": 0.2700158513730105,
+    "false_landmark_updates": 0.0,
+    "matched_landmarks": 66.0,
+    "state_classification_accuracy": 0.41379310344827586,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 9,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 6
+      },
+      "SEMI_STATIC": {
+        "STATIC": 7,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 2
+      },
+      "DYNAMIC": {
+        "STATIC": 2,
+        "SEMI_STATIC": 0,
+        "DYNAMIC": 3
+      }
+    },
+    "change_precision": 0.45454545454545453,
+    "change_recall": 0.35714285714285715,
+    "seed": 3,
+    "run_label": "kalman_tracking_only",
+    "dynamic_track_position_error": 0.1294152267403172,
+    "track_survival_length": 13.0,
+    "id_switch_count": 5.0,
+    "scenario": "mixed",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  },
+  {
+    "method": "motion_aware_full",
+    "ate": 3.494670148374379,
+    "rpe": 0.4250987530111153,
+    "avg_runtime_per_frame": 0.0008207262967954632,
+    "total_runtime": 0.22159610013477507,
+    "landmark_position_error": 4.988440236966463,
+    "map_consistency_score": 0.20875653323518423,
+    "false_landmark_updates": 2.0,
+    "matched_landmarks": 71.0,
+    "state_classification_accuracy": 0.3448275862068966,
+    "confusion_matrix": {
+      "STATIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 9,
+        "DYNAMIC": 6
+      },
+      "SEMI_STATIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 7,
+        "DYNAMIC": 2
+      },
+      "DYNAMIC": {
+        "STATIC": 0,
+        "SEMI_STATIC": 2,
+        "DYNAMIC": 3
+      }
+    },
+    "change_precision": 0.4827586206896552,
+    "change_recall": 1.0,
+    "seed": 3,
+    "run_label": "full_motion_aware",
+    "dynamic_track_position_error": 0.1291754320846696,
+    "track_survival_length": 13.0,
+    "id_switch_count": 3.0,
+    "scenario": "mixed",
+    "world.motion_mix.dynamic": NaN,
+    "robot.detection_noise_std": NaN
+  }
+]

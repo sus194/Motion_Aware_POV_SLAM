@@ -1,0 +1,70 @@
+﻿experiment_name: default_mixed_demo
+seed: 7
+output_dir: outputs
+
+world:
+  width: 30.0
+  height: 20.0
+  obstacle_margin: 1.0
+  object_counts:
+    shelves: 6
+    boxes: 8
+    carts: 5
+    cones: 6
+    pillars: 4
+  motion_mix:
+    static: 0.55
+    semi_static: 0.25
+    dynamic: 0.20
+  dynamic_patterns:
+    - straight
+    - waypoint
+    - random_walk
+
+robot:
+  steps_per_visit: 90
+  num_visits: 3
+  sensor_range: 8.0
+  fov_deg: 270.0
+  odom_noise_std:
+    xy: 0.08
+    theta: 0.03
+  detection_noise_std: 0.35
+  confidence_noise_std: 0.08
+  miss_rate: 0.08
+
+slam:
+  association_distance: 2.0
+  baseline_association_distance: 4.0
+  landmark_update_alpha: 0.35
+  baseline_landmark_update_alpha: 0.04
+  pose_correction_gain: 0.35
+  robust_correction_min_support: 2
+  robust_correction_trim_quantile: 0.75
+  robust_correction_max_step: 0.65
+  baseline_pose_correction_gain: 0.28
+  visit_initial_noise_xy: 0.9
+  visit_initial_noise_theta: 0.04
+  outlier_distance: 2.6
+  baseline_outlier_distance: 4.5
+  pov_consistency_sigma: 1.2
+  pov_reliable_weight_threshold: 0.35
+  dynamic_weight: 0.0
+  semistatic_weight: 0.45
+  static_weight: 1.0
+  relocation_confirmations: 3
+  relocation_radius: 1.0
+  dynamic_velocity_threshold: 0.35
+  semi_static_revisit_threshold: 1.1
+  persistence_threshold: 4
+  dynamic_prior_labels:
+    - carts
+    - cones
+  tracker_process_var: 0.4
+  tracker_measurement_var: 0.3
+  tracker_stale_frames: 8
+
+
+
+
+

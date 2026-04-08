@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime outputs
+outputs/logs/
+outputs/runs/
+outputs/metrics/debug_*.csv
+outputs/metrics/tune_*.csv
+outputs/metrics/probe_*.csv
+outputs/metrics/poststruct_*.csv
+outputs/figures/*.gif
+report/figures/*.gif
+
+# LaTeX build artifacts
+report/*.aux
+report/*.bbl
+report/*.blg
+report/*.fdb_latexmk
+report/*.fls
+report/*.log
+report/*.out
+report/*.synctex.gz
+report/*.toc

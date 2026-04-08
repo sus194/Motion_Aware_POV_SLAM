@@ -1,0 +1,38 @@
+﻿base_config: config/default.yaml
+suite_name: motion_aware_benchmark
+seed_list: [3, 7, 11, 19]
+
+scenarios:
+  - name: semi_static_only
+    overrides:
+      experiment_name: semi_static_only
+      world:
+        motion_mix:
+          static: 0.65
+          semi_static: 0.35
+          dynamic: 0.0
+  - name: mixed
+    overrides:
+      experiment_name: mixed
+      world:
+        motion_mix:
+          static: 0.55
+          semi_static: 0.25
+          dynamic: 0.20
+  - name: stress_dynamic_fraction
+    grid:
+      field: world.motion_mix.dynamic
+      values: [0.0, 0.1, 0.2, 0.35, 0.5, 0.65]
+    overrides:
+      experiment_name: stress_dynamic_fraction
+      world:
+        motion_mix:
+          static: 0.55
+          semi_static: 0.20
+          dynamic: 0.20
+  - name: stress_noise
+    grid:
+      field: robot.detection_noise_std
+      values: [0.15, 0.25, 0.35, 0.50]
+    overrides:
+      experiment_name: stress_noise

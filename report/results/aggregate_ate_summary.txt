@@ -1,0 +1,22 @@
+﻿
+scenario                run_label                    ate_mean
+--------                ---------                    --------
+semi_static_only        baseline             1.98339955251985
+semi_static_only        dynamic_filter_only  1.88071172334027
+semi_static_only        kalman_tracking_only 1.88071172334027
+semi_static_only        full_motion_aware    1.88622251879676
+mixed                   baseline             2.38199447876224
+mixed                   dynamic_filter_only   2.0353511631852
+mixed                   kalman_tracking_only  2.0353511631852
+mixed                   full_motion_aware    2.19137848394636
+stress_dynamic_fraction baseline             2.17312079072176
+stress_dynamic_fraction dynamic_filter_only  1.88991360890965
+stress_dynamic_fraction kalman_tracking_only 1.88991360890965
+stress_dynamic_fraction full_motion_aware    1.89743140161239
+stress_noise            baseline             2.42718769485841
+stress_noise            dynamic_filter_only  2.04613697800526
+stress_noise            kalman_tracking_only 2.04613697800526
+stress_noise            full_motion_aware    2.17076066405109
+
+
+
